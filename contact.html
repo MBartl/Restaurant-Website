@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/restaurantStyles.css">
+  <style>
+    fieldset {
+      border:none;
+    }
+
+    .field {
+      margin-left: 35%;
+      margin-right: 65%;
+    }
+
+    .field2 {
+      margin-left: -18.6%;
+    }
+
+    .field3 {
+      margin-left: -17%;
+    }
+
+    .body {
+      text-align: center;
+      width 30%;
+    }
+
+    .form-control {
+      width: 30%;
+    }
+
+    .input {
+      font-weight: normal;
+    }
+
+    .required {
+      font-weight: bold;
+    }
+
+    #disclaimer {
+      padding-bottom: 80px;
+      font-weight: bold;
+      font-style: oblique;
+      font-size: 120%;
+    }
+
+    input, select, textarea {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    legend {
+      font-size: 1em;
+      border-bottom-width: 0;
+    }
+
+    @media (max-width: 767.98px) {
+      .form-control {
+        width: 40%;
+      }
+    }
+
+    @media (max-width: 649.98px) {
+      .form-control {
+        width: 60%;
+      }
+      .field2 {
+        margin-left: 26%;
+        margin-right: 44%;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .form-control {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 452px) {
+      legend {
+        padding-top: 1em;
+        }
+      }
+    }
+  </style>
+  <script src="scripts/site.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <!--Javascript warning-->
+  <noscript>
+      <div class="noscriptmsg">
+      This site is best viewed with JavaScript.
+      </div>
+  </noscript>
+  <!-- Heading -->
+  <div class="page-header">
+    <p style="margin-bottom: 0;">We will be opening at a new location soon! Stay tuned for more info.</p>
+  </div>
+  <div class="top">
+    <div class="head">
+      <h1>World Cookery</h1>
+      <hr />
+    </div>
+    <!-- Nav -->
+    <ul class="nav nav-tabs">
+      <li class=nav-item><a class="nav-link" href="index.html">🏡</a></li>
+      <li class=nav-item><a class="nav-link" href="menu.html">Menu</a></li>
+      <li class=nav-item><a class="nav-link active" href="contact.html">Contact Us</a></li>
+  </div>
+  <!--start of main content-->
+  <hr class="hr-top" />
+  <div class="body">
+    <form class="form" action="contact.html" method="post">
+      <span class="field required">Name*:</span> <input class="form-control" type="text" name="Name" id="name" /><br />
+      <span class="field required">Email*:</span> <input class="form-control" type="text" name="Email" id="email" /><br />
+      <span class="field required">Phone*:</span> <input class="form-control" type="text" name="Phone" id = "phone" /><br />
+      <span class="field2">Reason for Inquiry:</span> <select class="form-control" name="Reason for Inquiry">
+        <option value=""></option>
+        <option value="Catering">Catering</option>
+        <option value="Private Party">Private Party</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Other">Other</option>
+      </select><br />
+      <span class="field3">Additional Information: </span>
+      <textarea class="form-control" name="info" rows="8" cols="22"></textarea><br />
+      <span class="field4">Have you been to the restaurant?</span>
+      <input class="form-check-input" type="radio" name="answer" value="YES" style="margin-bottom: 0.8em"><span class="input">Yes</span>
+      <input class="form-check-input" type="radio" name="answer" value="NO"><span class="input">No</span>
+      <legend><span class="best; field4">Best days to contact you:</span>
+        <input class="form-check-input" type="checkbox" id="monday" name="day" value="monday">
+        <label class="input" for="monday">M</label>
+        <input class="form-check-input" type="checkbox" id="tuesday" name="day" value="tuesday">
+        <label class="input" for="tuesday">T</label>
+        <input class="form-check-input" type="checkbox" id="wednesday" name="day" value="wednesday">
+        <label class="input" for="wednesday">W</label>
+        <input class="form-check-input" type="checkbox" id="thursday" name="day" value="thursday">
+        <label class="input" for="monday">Th</label>
+        <input class="form-check-input" type="checkbox" id="friday" name="day" value="friday">
+        <label class="input" for="friday">F</label>
+      </legend>
+      </fieldset><br />
+      <div id="submit">
+        <button onclick="submit_info()">Submit</button>
+      </div>
+    </form>
+    <br />
+    <p id="disclaimer">*Required Field</p>
+  </div>
+<!-- Footer -->  <hr class="hr-bottom" />
+  <div class="footer">
+    <p>1234 Main Street, Minneapolis 55404</p>
+    <p>(555) 555-1234</p>
+  </div>
+  <!--Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

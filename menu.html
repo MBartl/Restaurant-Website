@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Menu</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/restaurantStyles.css">
+  <style>
+    body {
+      text-align: center;
+    }
+
+    th {
+      color: #1f2536;
+      font-size: 120%;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    td {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      text-align: left;
+    }
+
+    .food {
+      table-layout: fixed;
+      width: 100%;
+    }
+
+    .food-head {
+      color: #1f2536;
+      font-size: 120%;
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    .drinks {
+      width: 30%;
+      border: 1px solid;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+      margin-bottom: 100px;
+    }
+
+    .dhead {
+      height: 40px;
+      width: 100%;
+      background-color: #cbd7e1;
+      border-bottom-style: solid;
+      text-align: left;
+      text-indent: 8px;
+    }
+
+    .body {
+      padding-bottom: 50px;
+    }
+
+    .drinks th {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .drinks td {
+      padding: 10px;
+    }
+
+    .drinks tr:nth-child(even) {
+      background-color: #cbd7e1;
+    }
+
+    .dprice {
+      float: right;
+    }
+
+    @media (min-width: 1000px) {
+      .drinks {
+        width: 22%;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .drinks {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .drinks th {
+        float: left;
+      }
+    }
+
+    @media (max-width: 649.98px) {
+
+      .food,
+      tbody,
+      td,
+      tr {
+        display: block;
+      }
+
+      .drinks {
+        width: 60%;
+      }
+
+      @media screen and (max-width: 400px) {
+        .drinks {
+          width: 80%;
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--Javascript warning-->
+  <noscript>
+      <div class="noscriptmsg">
+      This site is best viewed with JavaScript.
+      </div>
+  </noscript>
+  <!-- Heading -->
+  <div class="page-header">
+    <p style="margin-bottom: 0;">We will be opening at a new location soon! Stay tuned for more info.</p>
+  </div>
+  <div class="top">
+    <div class="head">
+      <h1>World Cookery</h1>
+      <hr />
+    </div>
+    <!-- Nav -->
+    <ul class="nav nav-tabs">
+      <li class=nav-item><a class="nav-link" href="index.html">🏡</a></li>
+      <li class=nav-item><a class="nav-link active" href="menu.html">Menu</a></li>
+      <li class=nav-item><a class="nav-link" href="contact.html">Contact Us</a></li>
+  </div>
+  <!--start of main content-->
+  <hr class="hr-top" />
+  <table class="body food" class="body food">
+    <tbody>
+      <tr>
+        <td>
+          <div class=food-head>Cheeseburger</div>Seasoned with our signature blend of spices and topped with your
+          choice of cheese. Served on a lightly toasted bun with fries.<br />
+          <center>$8.95</center>
+        </td>
+        <td>
+          <div class=food-head>Pasta Carbonara</div>Spaghettini with Smoked Bacon, Green Peas, and a Garlic-Parmesan
+          Cream Sauce. Available with Chicken.<br />
+          <center>$11.95</center>
+        </td>
+        <td>
+          <div class=food-head>Fish and Chips</div>A large fillet of cod. Lightly battered, fried, and served with
+          your choice of side.<br />
+          <center>$8.95</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class=food-head>Ratatouille</div>Cubed squash, eggplant, and zucchini, stewed with tomato, chopped onion
+          and pepper, chilies, and seasoned with cumin, coriander, garlic, ginger,
+          basil, and other spices. Served over rice.<br />
+          <center>$10.95</center>
+        </td>
+        <td>
+          <div class=food-head>Sauerbraten</div>A solid cut of beef is marinated for three to four days in red wine and
+          vinegar flavoured with onions, bay leaves, juniper berries, cloves, and
+          peppercorns. Served with potato dumplings.<br />
+          <center>$12.95</center>
+        </td>
+        <td>
+          <div class=food-head>Ramen</div>Chinese-style wheat noodles served in a pork-broth, flavored with soy
+          sauce or miso, and topped with sliced pork, dried seaweed, kamaboko,
+          and green onions.<br />
+          <center>$11.95</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class=food-head>Chicken Tikka Masala</div>Marinated chicken cooked in a tandoor (traditional clay oven) is
+          simmered to tender perfection in our mouth-watering tomato sauce,
+          prepared with a hint of cream and whole spices.
+          <center>$10.95</center>
+        </td>
+        <td>
+          <div class=food-head>Peking Duck</div>Three courses: duck skin accompanied by hoisin sauce, scallions, and
+          lotus buns. Meat is cut up and served with vegetables as a second
+          course, and a soup of the bones with celery cabbage follows.
+          <center>$17.95</center>
+        </td>
+        <td>
+          <div class=food-head>Biryani</div>Basmati rice flavored with Indian spices, is layered with your choice of
+          lamb, chicken, fish, or vegetables, and a thick gravy. Cooked over a
+          low flame.
+          <center>$11.95</center>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="drinks">
+    <thead class='dhead'>
+      <th>Drinks</th>
+    </thead>
+    <tr>
+      <td><span class="dname">Soda</span> <span class="dprice">$1.95</span></td>
+    </tr>
+    <tr>
+      <td><span class="dname">Indian Papaya Lassi</span> <span></span><span class="dprice">$2.95</span></td>
+    </tr>
+    <tr>
+      <td><span class="dname">Japanese Hot Tea</span> <span></span><span class="dprice">$2.95</span></td>
+    </tr>
+    <tr>
+      <td><span class="dname">Boba Tea</span> <span></span><span class="dprice">$3.49</span></td>
+    </tr>
+    <tr>
+      <td><span class="dname">Italian Shaved Ice</span> <span></span><span class="dprice">$2.49</span></td>
+    </tr>
+  </table>
+  <!-- Footer -->
+  <hr class="hr-bottom" />
+  <div class="footer">
+    <p>1234 Main Street, Minneapolis 55404</p>
+    <p>(555) 555-1234</p>
+  </div>
+  <!--Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
