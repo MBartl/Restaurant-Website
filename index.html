@@ -31,15 +31,35 @@
     padding-top: 0.8em;
   }
 
-  .image {
+  div.page-header {
+    height: 30px;
+  }
+
+  .img-fluid {
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  div.page-header {
-    height: 30px;
+  @media (min-width: 1000px) {
+    .img-fluid {
+      width: 35%;
+    }
   }
+
+  @media (max-width: 649.98px) {
+    .img-fluid {
+      width: 65%;
+    }
+  }
+
+  @media (max-width: 452px) {
+    .img-fluid {
+      width: 90%;
+    }
+  }
+
 </style>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -104,7 +124,7 @@
   <!--start of main content-->
   <hr class="hr-top" />
   <div class="body">
-    <img src="photos/exterior.jpg" alt="Our Restaurant" class="image" class="img-fluid" />
+    <img src="photos/exterior.jpg" alt="Our Restaurant" class="img-fluid" />
     <div class="body-article">
       <h3>Signature Dishes from Around the World</h3>
       <p>No need to travel far for something new. our
